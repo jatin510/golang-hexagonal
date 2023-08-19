@@ -23,7 +23,7 @@ func main() {
 	db, err := repository.NewDB(
 	 config.DatabaseConfig{
 	  Driver: "mysql",
-	  Url: "user:password@tcp(127.0.0.1:3306)/your_database_name?charset=utf8mb4&parseTime=true&loc=UTC&tls=false&readTimeout=3s&writeTimeout=3s&timeout=3s&clientFoundRows=true",
+	  Url: "root:root@tcp(127.0.0.1:3306)/user?charset=utf8mb4&parseTime=true&loc=UTC&tls=false&readTimeout=3s&writeTimeout=3s&timeout=3s&clientFoundRows=true",
 	  ConnMaxLifetimeInMinute: 3,
 	  MaxOpenConns:            10,
 	  MaxIdleConns:            1,
